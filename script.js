@@ -10,6 +10,7 @@ fileInput.addEventListener("change", () => {
   if (!file) return;
 
   audio.src = URL.createObjectURL(file);
+  audio.load();
   songName.textContent = file.name;
 });
 
